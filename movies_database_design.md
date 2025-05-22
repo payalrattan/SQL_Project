@@ -57,14 +57,14 @@ The purpose of this database is to store and manage information about movies, in
 
 **Entities and relationships:**
 
-- `Movie (movie_id, title, release_year)`  
-- `Actor (actor_id, name)`  
-- `Director (director_id, name)`  
-- `User (user_id, username)`  
-- `Comment (comment_id, user_id, movie_id, content, comment_date)`  
-- `Rating (rating_id, user_id, movie_id, rating_value)`  
-- `MovieActor (movie_id, actor_id)`  
-- `MovieDirector (movie_id, director_id)`  
+- `Movies (movie_id, title, release_year)`  
+- `Actors (actor_id, name)`  
+- `Directors (director_id, name)`  
+- `Users (user_id, username)`  
+- `Commentd (comment_id, user_id, movie_id, content, comment_date)`  
+- `Ratings (rating_id, user_id, movie_id, rating_value)`  
+- `Movie_Actor (movie_id, actor_id)`  
+- `Movie_Director (movie_id, director_id)`  
 
 **Relationships:**
 
@@ -82,25 +82,25 @@ The purpose of this database is to store and manage information about movies, in
 
 **Which entities will you choose to represent in your database?**
 
-- Movie  
-- Actor  
-- Director  
-- User  
-- Comment  
-- Rating  
-- MovieActor  
-- MovieDirector  
+- Movies  
+- Actors  
+- Directors  
+- Users  
+- Comments  
+- Ratings  
+- Movie_Actor  
+- Movie_Director  
 
 **What attributes will those entities have?**
 
-- **Movie**: `movie_id (PK)`, `title`, `release_year`  
-- **Actor**: `actor_id (PK)`, `name`  
+- **Movies**: `movie_id (PK)`, `title`, `release_year`  
+- **Actors**: `actor_id (PK)`, `name`  
 - **Director**: `director_id (PK)`, `name`  
-- **User**: `user_id (PK)`, `username`  
-- **Comment**: `comment_id (PK)`, `user_id (FK)`, `movie_id (FK)`, `content`, `comment_date`  
-- **Rating**: `rating_id (PK)`, `user_id (FK)`, `movie_id (FK)`, `rating_value`  
-- **MovieActor**: `movie_id (FK)`, `actor_id (FK)`  
-- **MovieDirector**: `movie_id (FK)`, `director_id (FK)`  
+- **Users**: `user_id (PK)`, `username`  
+- **Comments**: `comment_id (PK)`, `user_id (FK)`, `movie_id (FK)`, `content`, `comment_date`  
+- **Ratings**: `rating_id (PK)`, `user_id (FK)`, `movie_id (FK)`, `rating_value`  
+- **Movie_Actors**: `movie_id (FK)`, `actor_id (FK)`  
+- **Movie_Director**: `movie_id (FK)`, `director_id (FK)`  
 
 **Why did you choose the types you did?**
 
@@ -118,9 +118,7 @@ The purpose of this database is to store and manage information about movies, in
 ### Optimizations
 
 **Which optimizations (e.g., indexes, views) did you create? Why?**
-
-- Index on `movie.title` for fast search  
-- Index on `rating(movie_id)` to efficiently calculate average ratings  
+  
 - View to simplify movie browsing with average ratings and comment count  
 
 ---
@@ -134,8 +132,3 @@ The purpose of this database is to store and manage information about movies, in
 - No tracking of how many users watched a movie  
 - Ratings are stored, but no logic to handle disputes or edits  
 
-**What might your database not be able to represent very well?**
-
-- Complex user behavior (like review history or rating trends over time)  
-- Detailed production and release info  
-- Aggregated or weighted ratings by source or authority  
