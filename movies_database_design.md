@@ -1,4 +1,4 @@
-
+I'm
 # Design Document
 
 ## Movies Database
@@ -51,9 +51,7 @@ The purpose of this database is to store and manage information about movies, in
 
 ---
 
-### Entities and Relationships
-
-#### Entity Relationship Diagram (textual version)
+### Entities and Relationship
 
 **Entities and relationships:**
 
