@@ -72,7 +72,7 @@ The purpose of this database is to store and manage information about movies, in
 - A user can rate many movies  
 - Each movie can have many comments  
 
-![ER Diagram](https://i.postimg.cc/gkhtPw24/er-movie.jpg)
+![ER Diagram](https://i.postimg.cc/htsHXqDQ/ER.png)
 
 ---
 
