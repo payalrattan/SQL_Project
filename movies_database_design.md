@@ -103,7 +103,8 @@ The purpose of this database is to store and manage information about movies, in
 **Why did you choose the types you did?**
 
 - IDs and rating as integers for indexing and rating  
-- TEXT for comment, names, and title  
+- TEXT for comment, names, and title
+- TIMESTAMP to store current date and time
 
 **Why did you choose the constraints you did?**
 
