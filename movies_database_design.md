@@ -19,7 +19,7 @@ The purpose of this database is to store and manage information about movies, in
 - Users  
 - Comments  
 - Ratings  
-- Movie-actor and movie-director relationships
+- Movie-actors and movie-directors relationships
 
 **Which people, places, things, etc. are outside the scope of your database?**
 
@@ -61,8 +61,8 @@ The purpose of this database is to store and manage information about movies, in
 - `Users (user_id, username)`  
 - `Commentd (comment_id, user_id, movie_id, content, comment_date)`  
 - `Ratings (rating_id, user_id, movie_id, rating_value)`  
-- `Movie_Actor (movie_id, actor_id)`  
-- `Movie_Director (movie_id, director_id)`  
+- `Movie_Actors (movie_id, actor_id)`  
+- `Movie_Directors (movie_id, director_id)`  
 
 **Relationships:**
 
@@ -117,8 +117,8 @@ The purpose of this database is to store and manage information about movies, in
 
 **Which optimizations (e.g., indexes, views) did you create? Why?**
   
-- View to simplify movie browsing with average ratings and comment count  
-
+-view to display movies with their directors. 
+-view to Shows each user and how many comments they’ve made.
 ---
 
 ### Limitations
