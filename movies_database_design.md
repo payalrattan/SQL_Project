@@ -112,8 +112,8 @@ The purpose of this database is to store and manage information about movies, in
 
 **Which optimizations (e.g., indexes, views) did you create? Why?**
   
--view to display movies with their directors. 
--view to Shows each user and how many comments they’ve made.
+- view to display movies with their directors. 
+- view to Shows each user and how many comments they’ve made.
 ---
 
 ### Limitations
