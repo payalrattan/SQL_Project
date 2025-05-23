@@ -1,4 +1,4 @@
-I'm
+
 # Design Document
 
 ## Movies Database
