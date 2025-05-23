@@ -13,13 +13,7 @@ The purpose of this database is to store and manage information about movies, in
 
 **Which people, places, things, etc. are you including in the scope of your database?**
 
-- Movies  
-- Actors  
-- Directors  
-- Users  
-- Comments  
-- Ratings  
-- Movie-actors and movie-directors relationships
+- Movies,Actors,Directors,Users,Comments,Ratings,Movie-actors and movie-directors relationships
 
 **Which people, places, things, etc. are outside the scope of your database?**
 
@@ -53,7 +47,7 @@ The purpose of this database is to store and manage information about movies, in
 
 ### Entities and Relationship
 
-**Entities and relationships:**
+**Entities:**
 
 - `Movies (movie_id, title, release_year)`  
 - `Actors (actor_id, name)`  
@@ -86,8 +80,8 @@ The purpose of this database is to store and manage information about movies, in
 - Users  
 - Comments  
 - Ratings  
-- Movie_Actor  
-- Movie_Director  
+- Movie_Actors  
+- Movie_Directors  
 
 **What attributes will those entities have?**
 
@@ -98,7 +92,7 @@ The purpose of this database is to store and manage information about movies, in
 - **Comments**: `comment_id (PK)`, `user_id (FK)`, `movie_id (FK)`, `content`, `comment_date`  
 - **Ratings**: `rating_id (PK)`, `user_id (FK)`, `movie_id (FK)`, `rating_value`  
 - **Movie_Actors**: `movie_id (FK)`, `actor_id (FK)`  
-- **Movie_Director**: `movie_id (FK)`, `director_id (FK)`  
+- **Movie_Directors**: `movie_id (FK)`, `director_id (FK)`  
 
 **Why did you choose the types you did?**
 
